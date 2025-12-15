@@ -11,7 +11,7 @@ const Projects = () => {
             tags: ["Node.js", "Redis", "WebSockets", "React", "Clean Arch"],
             links: {
                 demo: "https://puerta-espera.vercel.app/",
-                code: "https://github.com/lautarosard/puerta-espera" // ¡Revisa si este es el link correcto!
+                code: "https://github.com/lautarosard/Turnos_puerta18" // ¡Revisa si este es el link correcto!
             },
             icon: <Zap size={48} />, // Icono de energía/velocidad
             gradient: "from-primary/90 to-secondary/90"
@@ -23,7 +23,7 @@ const Projects = () => {
             tags: [".NET 8", "Microservicios", "RabbitMQ", "Google Cloud", "AI"],
             links: {
                 demo: "https://soundlist-front-end.vercel.app/",
-                code: "https://github.com/lautarosard/SoundList" // ¡Revisa si este es el link correcto!
+                code: "https://github.com/SoundList" // ¡Revisa si este es el link correcto!
             },
             icon: <Music size={48} />, // Icono de música
             gradient: "from-[#4a0404] to-black"
