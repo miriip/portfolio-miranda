@@ -29,19 +29,22 @@ const About = () => {
                     <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
                         <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
                             <p>
-                                Más allá de escribir código, me apasiona <span className="text-white font-semibold">entender cómo funcionan las cosas por dentro</span>.
-                                Mi fuerte es el desarrollo Backend: diseñar bases de datos, crear APIs eficientes y asegurar que la lógica de negocio sea sólida.
+                                Más allá de escribir código, me apasiona <span className="text-white font-semibold">crear sistemas que funcionen bajo presión</span>.
+                                Mi enfoque principal es la arquitectura Backend: diseñar bases de datos eficientes, APIs escalables y lógica de negocio blindada.
                             </p>
+
+                            {/* AQUÍ ESTÁ EL CAMBIO CLAVE */}
                             <p>
-                                Aunque mi especialidad está en el servidor, no soy ajeno al Frontend.
-                                Me manejo con React y TypeScript lo suficiente para <span className="text-white font-semibold">construir interfaces funcionales</span> que consuman mis propios servicios.
+                                Como desarrollador integral, complemento esta fortaleza con un <span className="text-white font-semibold">dominio sólido del Frontend</span>.
+                                Utilizo React y TypeScript para construir interfaces modernas y reactivas, entregando soluciones <span className="text-primary font-medium">Full Stack</span> donde la experiencia de usuario es tan robusta como el servidor que la respalda.
                             </p>
+
                             <p>
-                                Busco proyectos donde pueda aportar lógica robusta y seguir aprendiendo sobre arquitectura de software.
+                                Busco desafíos técnicos donde pueda aplicar mi capacidad para resolver problemas complejos de <span className="text-white">concurrencia</span> y <span className="text-white">arquitectura</span>.
                             </p>
                         </div>
 
-                        {/* Caja decorativa o de estadísticas */}
+                        {/* Caja de habilidades (Stack) */}
                         <div className="bg-white/5 p-8 rounded-2xl border border-white/10 shadow-xl backdrop-blur-sm">
                             <h3 className="text-2xl font-semibold mb-6 text-primary flex items-center gap-2">
                                 <Terminal className="text-secondary" />

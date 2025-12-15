@@ -29,7 +29,9 @@ const Hero = () => {
                     <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
                         <span className="text-white font-semibold">Software Developer</span> especializado en Backend.
                         <br />
-                        Creo soluciones robustas y escalables, con la capacidad de integrarlas en interfaces modernas.
+                        Creo soluciones robustas y escalables,
+                        <br />
+                        con la capacidad de integrarlas en interfaces modernas.
                     </p>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-6">
