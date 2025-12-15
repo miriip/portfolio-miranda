@@ -18,7 +18,7 @@ const Footer = () => {
                 <p className="text-light/40 text-sm flex items-center justify-center gap-2">
                     &copy; {new Date().getFullYear()} Designed & Built with
                     <Flame size={14} className="text-primary animate-pulse" fill="currentColor" />
-                    by <span className="text-light/80 font-medium">Lautaro</span>.
+                    by <span className="text-light/80 font-medium">Ariel Lautaro Sardina</span>.
                 </p>
             </div>
 
