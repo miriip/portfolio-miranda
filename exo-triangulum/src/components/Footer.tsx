@@ -11,8 +11,6 @@ const Footer = () => {
                     {/* Actualiza los href con tus links reales */}
                     <SocialLink href="https://github.com/lautarosard" icon={<Github size={22} />} />
                     <SocialLink href="https://linkedin.com/in/ariel-lautaro-sardina" icon={<Linkedin size={22} />} />
-                    {/* Si no usas Twitter, puedes quitarlo o cambiarlo por otro */}
-                    <SocialLink href="#" icon={<Twitter size={22} />} />
                 </div>
 
                 <p className="text-light/40 text-sm flex items-center justify-center gap-2">
