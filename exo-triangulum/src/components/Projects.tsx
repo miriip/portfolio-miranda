@@ -1,15 +1,16 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Music, Coffee, Utensils } from 'lucide-react';
+import { ExternalLink, Github, Music, Coffee, Utensils, Globe } from 'lucide-react';
 
 const Projects = () => {
     const projects = [
         {
             title: "SoundList",
             subtitle: "Plataforma Social Distribuida (Microservicios)",
-            description: "Red social de música desarrollada como proyecto académico, que permite reseñar canciones, crear listas colaborativas y obtener análisis de sentimiento mediante inteligencia artificial.",
-            tags: [".NET", "Microservices", "RabbitMQ", "SQL", "AI"],
+            description: "Arquitectura de Microservicios en la nube que integra Spotify e IA. Resuelve la latencia en el procesamiento de datos utilizando RabbitMQ para delegar tareas asíncronas y garantizar una UX fluida.",
+            tags: [".NET 8", "Microservicios", "RabbitMQ", "Google Cloud", "AI"],
             links: {
-                code: "https://github.com/SoundList"
+                code: "https://github.com/SoundList",
+                demo: "https://soundlist-front-end.vercel.app/HTML/home.html"
             },
             icon: <Music size={48} />,
             gradient: "from-primary/90 to-secondary/90"
@@ -114,6 +115,16 @@ const Projects = () => {
                                 </div>
 
                                 <div className="flex items-center gap-4 mt-auto pt-6 border-t border-white/5">
+                                    {project.links.demo && (
+                                        <a
+                                            href={project.links.demo}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center gap-2 text-white hover:text-primary font-medium transition-colors text-sm bg-white/5 px-4 py-2 rounded-lg hover:bg-white/10"
+                                        >
+                                            <Globe size={16} /> Live Demo
+                                        </a>
+                                    )}
                                     <a
                                         href={project.links.code}
                                         target="_blank"

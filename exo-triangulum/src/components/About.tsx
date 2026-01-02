@@ -1,14 +1,30 @@
 import { motion } from 'framer-motion';
-import { Code2, Database, Globe, Server, Terminal, Cpu } from 'lucide-react';
+import { Code2, Database, Globe, Server, Terminal, Cloud, Container, GitBranch, FileCode, Layers } from 'lucide-react';
 
 const About = () => {
     const skills = [
-        { name: "C# / .NET", icon: <Code2 size={20} /> },
+        // Backend & Core
+        { name: "C#", icon: <Code2 size={20} /> },
+        { name: ".NET", icon: <Code2 size={20} /> },
+        { name: "Python", icon: <Terminal size={20} /> },
+        { name: "Node.js", icon: <Server size={20} /> },
+        // Frontend
+        { name: "HTML5", icon: <FileCode size={20} /> },
+        { name: "CSS3", icon: <FileCode size={20} /> },
         { name: "JavaScript", icon: <Globe size={20} /> },
-        { name: "MySQL / SQL", icon: <Database size={20} /> },
+        { name: "React", icon: <Layers size={20} /> },
+        // Bases de Datos
+        { name: "SQL Server", icon: <Database size={20} /> },
+        { name: "MySQL", icon: <Database size={20} /> },
+        // Infraestructura
+        { name: "Docker", icon: <Container size={20} /> },
+        { name: "Google Cloud", icon: <Cloud size={20} /> },
+        // Herramientas
+        { name: "Git", icon: <GitBranch size={20} /> },
+        { name: "Postman", icon: <Terminal size={20} /> },
+        // Arquitectura
         { name: "Microservicios", icon: <Server size={20} /> },
         { name: "RabbitMQ", icon: <Terminal size={20} /> },
-        { name: "HTML5 / CSS3", icon: <Cpu size={20} /> },
     ];
 
     return (
@@ -46,18 +62,18 @@ const About = () => {
                                 <Terminal className="text-secondary" />
                                 Mi Stack Técnico
                             </h3>
-                            <div className="flex flex-wrap gap-3">
+                            <div className="flex flex-wrap gap-2">
                                 {skills.map((skill, index) => (
                                     <motion.div
                                         key={skill.name}
                                         initial={{ opacity: 0, scale: 0.8 }}
                                         whileInView={{ opacity: 1, scale: 1 }}
                                         viewport={{ once: true }}
-                                        transition={{ delay: index * 0.1 }}
-                                        className="flex items-center gap-2 bg-black/40 hover:bg-primary/20 border border-white/10 hover:border-primary/50 px-4 py-2 rounded-lg transition-all cursor-default"
+                                        transition={{ delay: index * 0.05 }}
+                                        className="flex items-center gap-2 bg-black/40 hover:bg-primary/20 border border-white/10 hover:border-primary/50 px-3 py-1.5 rounded-lg transition-all cursor-default"
                                     >
                                         <span className="text-secondary">{skill.icon}</span>
-                                        <span className="font-medium text-gray-200">{skill.name}</span>
+                                        <span className="font-medium text-gray-200 text-sm">{skill.name}</span>
                                     </motion.div>
                                 ))}
                             </div>
