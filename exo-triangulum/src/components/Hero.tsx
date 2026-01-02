@@ -18,20 +18,18 @@ const Hero = () => {
                         Hola, soy
                     </h2>
 
-                    {/* CAMBIA 'Tu Nombre' POR TU NOMBRE REAL */}
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
                         <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                            Ariel Lautaro Sardina
+                            Miranda Julieta Guerra
                         </span>
                     </h1>
 
-                    {/* DESCRIPCIÓN AJUSTADA A TU PERFIL */}
                     <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-                        <span className="text-white font-semibold">Software Developer</span> especializado en Backend.
+                        <span className="text-white font-semibold">Full Stack</span> Developer
                         <br />
-                        Creo soluciones robustas y escalables,
+                        Estudiante de Ingeniería en Informática
                         <br />
-                        con la capacidad de integrarlas en interfaces modernas.
+                        Apasionada por crear soluciones tecnológicas innovadoras
                     </p>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-6">
@@ -50,11 +48,9 @@ const Hero = () => {
                     </div>
 
                     <div className="mt-12 flex items-center justify-center gap-6">
-                        {/* RECUERDA: Estos links se actualizan en el componente SocialLink abajo si quieres cambiarlos globalmente, 
-                            o puedes ponerlos directos aquí */}
-                        <SocialLink href="https://github.com/lautarosard" icon={<Github size={24} />} />
-                        <SocialLink href="https://linkedin.com/in/ariel-lautaro-sardina" icon={<Linkedin size={24} />} />
-                        <SocialLink href="mailto:lautarosardina@gmail.com" icon={<Mail size={24} />} />
+                        <SocialLink href="https://github.com/miriip" icon={<Github size={24} />} />
+                        <SocialLink href="https://www.linkedin.com/in/miranda-guerra-893256375" icon={<Linkedin size={24} />} />
+                        <SocialLink href="mailto:guerra.mirandamg@gmail.com" icon={<Mail size={24} />} />
                     </div>
                 </motion.div>
             </div>

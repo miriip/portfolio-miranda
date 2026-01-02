@@ -4,29 +4,26 @@ import { ExternalLink, Github, Music, Zap } from 'lucide-react';
 const Projects = () => {
     const projects = [
         {
-            title: "EventQueue",
-            // Un subtítulo técnico vende mucho más
-            subtitle: "Gestión de Filas High-Concurrency",
-            description: "Plataforma Full Stack diseñada para gestionar alta concurrencia en eventos masivos. Utiliza contadores atómicos en Redis para asignar turnos vía QR en microsegundos, eliminando filas físicas y evitando Race Conditions.",
-            tags: ["Node.js", "Redis", "WebSockets", "React", "Clean Arch"],
+            title: "SoundList",
+            subtitle: "Plataforma Social Distribuida (Microservicios)",
+            description: "Red social de música desarrollada como proyecto académico, que permite reseñar canciones, crear listas colaborativas y obtener análisis de sentimiento mediante inteligencia artificial.",
+            tags: [".NET", "Microservices", "RabbitMQ", "SQL", "AI"],
             links: {
-                demo: "https://puerta-espera.vercel.app/",
-                code: "https://github.com/lautarosard/Turnos_puerta18" // ¡Revisa si este es el link correcto!
+                code: "https://github.com/SoundList"
             },
-            icon: <Zap size={48} />, // Icono de energía/velocidad
+            icon: <Music size={48} />,
             gradient: "from-primary/90 to-secondary/90"
         },
         {
-            title: "SoundList",
-            subtitle: "Distributed Social Music Platform",
-            description: "Arquitectura de Microservicios en la nube que integra Spotify e IA. Resuelve la latencia en el procesamiento de datos utilizando RabbitMQ para delegar tareas asíncronas y garantizar una UX fluida.",
-            tags: [".NET 8", "Microservicios", "RabbitMQ", "Google Cloud", "AI"],
+            title: "Café El Mejor",
+            subtitle: "Sistema de Gestión para Cafetería",
+            description: "Aplicación Full Stack desarrollada para el control de inventario y el registro de ventas, mejorando la organización y precisión administrativa del negocio.",
+            tags: [".NET", "MySQL", "JavaScript", "HTML5", "CSS3"],
             links: {
-                demo: "https://soundlist-front-end.vercel.app/",
-                code: "https://github.com/SoundList" // ¡Revisa si este es el link correcto!
+                code: "https://github.com/miriip/Proyecto_Cafe_el_Mejor"
             },
-            icon: <Music size={48} />, // Icono de música
-            gradient: "from-[#4a0404] to-black"
+            icon: <Zap size={48} />,
+            gradient: "from-primary/80 to-black"
         }
     ];
 
@@ -57,7 +54,7 @@ const Projects = () => {
                         Proyectos <span className="text-primary">Destacados</span>
                     </h2>
                     <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-                        Soluciones reales donde la <span className="text-white font-semibold">arquitectura</span>, la <span className="text-white font-semibold">escalabilidad</span> y el <span className="text-white font-semibold">rendimiento</span> son la prioridad.
+                        Proyectos desarrollados durante mi formación académica, aplicando tecnologías modernas para resolver problemas reales.
                     </p>
                 </motion.div>
 
@@ -107,20 +104,12 @@ const Projects = () => {
 
                                 <div className="flex items-center gap-4 mt-auto pt-6 border-t border-white/5">
                                     <a
-                                        href={project.links.demo}
+                                        href={project.links.code}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="flex items-center gap-2 text-white hover:text-primary font-medium transition-colors text-sm bg-white/5 px-4 py-2 rounded-lg hover:bg-white/10"
                                     >
-                                        <ExternalLink size={16} /> Live Demo
-                                    </a>
-                                    <a
-                                        href={project.links.code}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center gap-2 text-gray-400 hover:text-white font-medium transition-colors text-sm px-4 py-2"
-                                    >
-                                        <Github size={16} /> Código
+                                        <Github size={16} /> Ver Código
                                     </a>
                                 </div>
                             </div>
@@ -129,8 +118,8 @@ const Projects = () => {
                 </motion.div>
 
                 <div className="text-center mt-16">
-                    <a href="https://github.com/lautarosard" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-gray-400 hover:text-primary transition-colors border-b border-transparent hover:border-primary pb-1 group">
-                        Ver más experimentos en GitHub <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform" />
+                    <a href="https://github.com/miriip" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-gray-400 hover:text-primary transition-colors border-b border-transparent hover:border-primary pb-1 group">
+                        Ver más proyectos en GitHub <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform" />
                     </a>
                 </div>
             </div>

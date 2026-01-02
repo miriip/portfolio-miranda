@@ -2,14 +2,13 @@ import { motion } from 'framer-motion';
 import { Code2, Database, Globe, Server, Terminal, Cpu } from 'lucide-react';
 
 const About = () => {
-    // Aquí puedes agregar o quitar tus habilidades reales
     const skills = [
         { name: "C# / .NET", icon: <Code2 size={20} /> },
-        { name: "Node.js", icon: <Server size={20} /> },
-        { name: "SQL / PostgreSQL", icon: <Database size={20} /> },
-        { name: "TypeScript / Express", icon: <Terminal size={20} /> },
-        { name: "React", icon: <Globe size={20} /> },
-        { name: "API REST", icon: <Cpu size={20} /> },
+        { name: "JavaScript", icon: <Globe size={20} /> },
+        { name: "MySQL / SQL", icon: <Database size={20} /> },
+        { name: "Microservicios", icon: <Server size={20} /> },
+        { name: "RabbitMQ", icon: <Terminal size={20} /> },
+        { name: "HTML5 / CSS3", icon: <Cpu size={20} /> },
     ];
 
     return (
@@ -29,18 +28,15 @@ const About = () => {
                     <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
                         <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
                             <p>
-                                Más allá de escribir código, me apasiona <span className="text-white font-semibold">crear sistemas que funcionen bajo presión</span>.
-                                Mi enfoque principal es la arquitectura Backend: diseñar bases de datos eficientes, APIs escalables y lógica de negocio blindada.
-                            </p>
-
-                            {/* AQUÍ ESTÁ EL CAMBIO CLAVE */}
-                            <p>
-                                Como desarrollador integral, complemento esta fortaleza con un <span className="text-white font-semibold">dominio sólido del Frontend</span>.
-                                Utilizo React y TypeScript para construir interfaces modernas y reactivas, entregando soluciones <span className="text-primary font-medium">Full Stack</span> donde la experiencia de usuario es tan robusta como el servidor que la respalda.
+                                Soy estudiante de Ingeniería en Informática, con interés en el desarrollo de software y en la aplicación de tecnologías para resolver problemas reales.
                             </p>
 
                             <p>
-                                Busco desafíos técnicos donde pueda aplicar mi capacidad para resolver problemas complejos de <span className="text-white">concurrencia</span> y <span className="text-white">arquitectura</span>.
+                                Me destaco por mi pensamiento analítico, curiosidad y capacidad de aprendizaje continuo. Disfruto trabajar en equipo, adaptarme a distintos contextos y participar en proyectos que integren áreas técnicas y organizativas.
+                            </p>
+
+                            <p>
+                                Actualmente busco oportunidades para seguir desarrollando mis habilidades tanto técnicas como de gestión dentro del sector tecnológico, aportando compromiso y ganas de crecer profesionalmente.
                             </p>
                         </div>
 

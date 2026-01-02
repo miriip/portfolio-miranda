@@ -44,8 +44,8 @@ const Header = () => {
                         ))}
                     </ul>
                     <div className="flex items-center gap-4 pl-8 border-l border-white/10">
-                        <SocialLink href="https://github.com/lautarosard" icon={<Github size={18} />} />
-                        <SocialLink href="https://linkedin.com/in/ariel-lautaro-sardina" icon={<Linkedin size={18} />} />
+                        <SocialLink href="https://github.com/miriip" icon={<Github size={18} />} />
+                        <SocialLink href="https://www.linkedin.com/in/miranda-guerra-893256375" icon={<Linkedin size={18} />} />
                     </div>
                 </nav>
 
@@ -79,9 +79,9 @@ const Header = () => {
                                 </a>
                             ))}
                             <div className="flex gap-6 pt-6 border-t border-white/10 justify-center">
-                                <SocialLink href="https://github.com/lautarosard" icon={<Github size={20} />} />
-                                <SocialLink href="https://linkedin.com/in/ariel-lautaro-sardina" icon={<Linkedin size={20} />} />
-                                <SocialLink href="mailto:lautarosardina@gmail.com" icon={<Mail size={20} />} />
+                                <SocialLink href="https://github.com/miriip" icon={<Github size={20} />} />
+                                <SocialLink href="https://www.linkedin.com/in/miranda-guerra-893256375" icon={<Linkedin size={20} />} />
+                                <SocialLink href="mailto:guerra.mirandamg@gmail.com" icon={<Mail size={20} />} />
                             </div>
                         </div>
                     </motion.div>

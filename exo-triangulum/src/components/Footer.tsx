@@ -8,15 +8,14 @@ const Footer = () => {
 
             <div className="container mx-auto px-4 relative z-10">
                 <div className="flex justify-center gap-8 mb-8">
-                    {/* Actualiza los href con tus links reales */}
-                    <SocialLink href="https://github.com/lautarosard" icon={<Github size={22} />} />
-                    <SocialLink href="https://linkedin.com/in/ariel-lautaro-sardina" icon={<Linkedin size={22} />} />
+                    <SocialLink href="https://github.com/miriip" icon={<Github size={22} />} />
+                    <SocialLink href="https://www.linkedin.com/in/miranda-guerra-893256375" icon={<Linkedin size={22} />} />
                 </div>
 
                 <p className="text-light/40 text-sm flex items-center justify-center gap-2">
                     &copy; {new Date().getFullYear()} Designed & Built with
                     <Flame size={14} className="text-primary animate-pulse" fill="currentColor" />
-                    by <span className="text-light/80 font-medium">Ariel Lautaro Sardina</span>.
+                    by <span className="text-light/80 font-medium">Miranda Julieta Guerra</span>.
                 </p>
             </div>
 
