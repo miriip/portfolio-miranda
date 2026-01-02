@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Music, Zap } from 'lucide-react';
+import { ExternalLink, Github, Music, Coffee, Utensils } from 'lucide-react';
 
 const Projects = () => {
     const projects = [
@@ -22,8 +22,19 @@ const Projects = () => {
             links: {
                 code: "https://github.com/miriip/Proyecto_Cafe_el_Mejor"
             },
-            icon: <Zap size={48} />,
+            icon: <Coffee size={48} />,
             gradient: "from-primary/80 to-black"
+        },
+        {
+            title: "Sistema de Gestión de Restaurante",
+            subtitle: "API REST y Frontend Web",
+            description: "Sistema completo para digitalizar la administración de menús y comandas, optimizando la comunicación del personal y el procesamiento de pedidos mediante una API REST y una interfaz web operativa.",
+            tags: [".NET", "C#", "SQL Server", "Entity Framework", "JavaScript", "HTML5", "CSS3"],
+            links: {
+                code: "https://github.com/miriip/TP_Restaurante"
+            },
+            icon: <Utensils size={48} />,
+            gradient: "from-secondary/90 to-primary/90"
         }
     ];
 
