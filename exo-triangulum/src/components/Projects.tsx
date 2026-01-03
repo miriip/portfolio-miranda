@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Music, Coffee, Utensils, Globe } from 'lucide-react';
+import { ExternalLink, Github, Music, Coffee, Utensils, Globe, Palette } from 'lucide-react';
 
 const Projects = () => {
     const projects = [
@@ -13,7 +13,7 @@ const Projects = () => {
                 demo: "https://soundlist-front-end.vercel.app/HTML/home.html"
             },
             icon: <Music size={48} />,
-            gradient: "from-primary/90 to-secondary/90"
+            gradient: "from-violet-500/90 to-violet-900/90"
         },
         {
             title: "Café El Mejor",
@@ -24,7 +24,7 @@ const Projects = () => {
                 code: "https://github.com/miriip/Proyecto_Cafe_el_Mejor"
             },
             icon: <Coffee size={48} />,
-            gradient: "from-primary/80 to-black"
+            gradient: "from-amber-800/90 to-amber-950/90"
         },
         {
             title: "Sistema de Gestión de Restaurante",
@@ -36,6 +36,18 @@ const Projects = () => {
             },
             icon: <Utensils size={48} />,
             gradient: "from-secondary/90 to-primary/90"
+        },
+        {
+            title: "Nimbus Art",
+            subtitle: "E-commerce de Arte Personalizado",
+            description: "Página web desarrollada para la venta de cuadros personalizados, con diseño moderno y experiencia de usuario optimizada para mostrar y comercializar obras de arte de manera profesional.",
+            tags: ["TypeScript", "React", "CSS3", "Vercel"],
+            links: {
+                code: "https://github.com/miriip/Nimbus_Art-",
+                demo: "https://nimbus-art-two.vercel.app"
+            },
+            icon: <Palette size={48} />,
+            gradient: "from-purple-600/90 to-pink-600/90"
         }
     ];
 
@@ -122,7 +134,7 @@ const Projects = () => {
                                             rel="noopener noreferrer"
                                             className="flex items-center gap-2 text-white hover:text-primary font-medium transition-colors text-sm bg-white/5 px-4 py-2 rounded-lg hover:bg-white/10"
                                         >
-                                            <Globe size={16} /> Live Demo
+                                            <Globe size={16} /> Live
                                         </a>
                                     )}
                                     <a
